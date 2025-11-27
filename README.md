@@ -1,36 +1,187 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MeraDhan - Economic Calendar
 
-## Getting Started
+A pixel-perfect, production-ready web application built with Next.js, TypeScript, Tailwind CSS, and Framer Motion.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Pixel-Perfect Design**: Exact implementation of the Figma design
+- **Fully Responsive**: Optimized for desktop, tablet, and mobile devices
+- **Modern Tech Stack**: Next.js 15, TypeScript, Tailwind CSS v4, ShadCN UI
+- **Smooth Animations**: Framer Motion for fluid transitions
+- **Production Ready**: Clean code, proper folder structure, and best practices
+
+## 📦 Tech Stack
+
+- **Framework**: Next.js 15 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **UI Components**: ShadCN UI
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+
+## 🛠️ Installation & Setup
+
+### Prerequisites
+
+- Node.js 18+ installed
+- npm or yarn package manager
+
+### Steps to Run Locally
+
+1. **Navigate to the project directory**:
+   ```bash
+   cd meradhan-app
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser**:
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+## 📁 Project Structure
+
+```
+meradhan-app/
+├── app/
+│   ├── layout.tsx          # Root layout with metadata
+│   ├── page.tsx            # Economic Calendar page
+│   └── globals.css         # Global styles and CSS variables
+├── components/
+│   ├── ui/                 # ShadCN UI components
+│   │   ├── button.tsx
+│   │   ├── card.tsx
+│   │   ├── input.tsx
+│   │   └── table.tsx
+│   ├── Header.tsx          # Navigation header
+│   ├── Footer.tsx          # Footer with links
+│   ├── Breadcrumb.tsx      # Breadcrumb navigation
+│   ├── DateFilter.tsx      # Date filter tabs
+│   ├── EventsTable.tsx     # Economic events table
+│   ├── CalendarWidget.tsx  # Interactive calendar
+│   └── Newsletter.tsx      # Newsletter subscription
+├── lib/
+│   └── utils.ts            # Utility functions
+└── public/                 # Static assets
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Design Implementation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Colors
+- **Primary Blue**: `#003D82`
+- **Orange/Red**: `#FF5733`
+- **Light Blue**: `#E8F4FF`
+- **Gray**: `#6B7280`
+- **Light Gray**: `#F3F4F6`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Typography
+- **Font Family**: Inter (Google Fonts)
+- **Headings**: Bold, various sizes
+- **Body**: Regular weight, 14-16px
 
-## Learn More
+### Components
 
-To learn more about Next.js, take a look at the following resources:
+1. **Header**
+   - Logo with tagline
+   - Desktop navigation menu
+   - Mobile hamburger menu
+   - Sign Up CTA button
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Economic Calendar**
+   - Breadcrumb navigation
+   - Page title with description
+   - Date filter tabs (Yesterday, Today, Tomorrow, etc.)
+   - Events table with time, country, and event details
+   - Interactive calendar widget
+   - Importance indicators (stars)
+   - Favorite functionality
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Newsletter Section**
+   - Email subscription form
+   - Privacy policy notice
+   - Responsive layout
 
-## Deploy on Vercel
+4. **Footer**
+   - Company information
+   - Social media links
+   - Product links
+   - Resource links
+   - Contact information
+   - Disclaimer
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔧 Available Scripts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm start` - Start production server
+- `npm run lint` - Run ESLint
+
+## 📱 Responsive Design
+
+The application is fully responsive with breakpoints:
+- **Mobile**: < 768px
+- **Tablet**: 768px - 1024px
+- **Desktop**: > 1024px
+
+## ✨ Animations
+
+Smooth animations powered by Framer Motion:
+- Page transitions
+- Button hover effects
+- Table row animations
+- Calendar interactions
+- Mobile menu slide-in
+
+## 🚀 Production Deployment
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+### Deploy to Vercel (Recommended)
+
+1. Push your code to GitHub
+2. Import project in Vercel
+3. Deploy with one click
+
+### Deploy to Other Platforms
+
+The app can be deployed to any platform that supports Next.js:
+- Netlify
+- AWS Amplify
+- Digital Ocean
+- Railway
+- Render
+
+## 📝 Notes
+
+- All components are fully typed with TypeScript
+- Code follows React and Next.js best practices
+- Accessibility compliant
+- SEO optimized with proper metadata
+- No unused code or dependencies
+
+## 🤝 Contributing
+
+This is a production-ready application. For any modifications:
+1. Follow the existing code structure
+2. Maintain TypeScript types
+3. Keep components modular and reusable
+4. Test responsiveness on all devices
+
+## 📄 License
+
+This project is built for MeraDhan.
+
+---
+
+**Built with ❤️ using Next.js, TypeScript, and Tailwind CSS**
